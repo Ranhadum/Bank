@@ -8,8 +8,8 @@ namespace Bank
 {
     class SavingsAccount :  Account
     {
-        public SavingsAccount(string accountnumber, string firstname, string lastname, decimal balance, long pesel)
-            :base(accountnumber, firstname, lastname, balance, pesel)
+        public SavingsAccount(int id, string firstname, string lastname, long pesel)
+            :base(id, firstname, lastname, pesel)
         {
         }
 
