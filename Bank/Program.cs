@@ -24,11 +24,13 @@ namespace Bank
 
             Account billingAccount2 = new BillingAccount(3, savingsAccount2.FirstName, savingsAccount2.LastName, savingsAccount2.Pesel);
 
-            Printer printer = new Printer();
+            IPrinter printer = new Printer();
+            IPrinter smallprinter = new SmallPrinter();
 
             printer.Print(savingsAccount);
             printer.Print(savingsAccount2);
             printer.Print(billingAccount2);
+            smallprinter.Print(savingsAccount);
 
             Console.ReadKey();
         }
